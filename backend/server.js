@@ -15,7 +15,7 @@ app.get('/screenshot', async (req, res) => {
   await page.type('#signin-email-field', 'sandeep.bsn@gmail.com');
   await page.click('#signin-email-continue-btn');
   await page.waitForTimeout(2000)
-  await page.type('#signin-password-field', 'Sandyhappy_9596');
+  await page.type('#signin-password-field', '123456789');
 
   //navigating to landing page
   await Promise.all([
